@@ -16,7 +16,7 @@ Dexterous in-hand manipulation encounters difficulties with real-time contact di
 
 ## Contact-Implicit Model Predictive Control for Dexterous In-hand Manipulation: A Long-Horizon and Robust Approach
 
-{% cite jiang2024contact %} 
+{% cite jiang2024contact %}
 [[Website](https://director-of-g.github.io/in_hand_manipulation/)]
 
 <div class="row mt-3">
@@ -32,7 +32,7 @@ Inspired by recent advancements in contact-rich locomotion and manipulation, thi
 
 ## Contact-Aware Non-prehensile Robotic Manipulation for Object Retrieval in Cluttered Environments
 
-{% cite jiang2023contact %} 
+{% cite jiang2023contact %}
 [[Website](https://director-of-g.github.io/push_in_clutter/)]
 
 <div class="row mt-3">
@@ -45,5 +45,3 @@ Inspired by recent advancements in contact-rich locomotion and manipulation, thi
 </div>
 
 This paper proposes a new non-prehensile manipulation method for the task of object retrieval in cluttered environments, using a rod-like pusher. Different from existing methods, the proposed approach is with the contact-aware feature, which enables the synthesized effect of active removal of obstacles, avoidance behavior, and switching contact face for improved dexterity. Hence both the feasibility and efficiency of the task are greatly promoted. The performance of the proposed method is validated in a planar object retrieval task, where the target object, surrounded by many fixed or movable obstacles, is manipulated and isolated. Both simulation and experimental results are presented.
-
-
