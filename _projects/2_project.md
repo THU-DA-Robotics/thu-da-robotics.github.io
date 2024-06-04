@@ -14,6 +14,19 @@ Dexterous manipulation in robotics involves precise control of objects, crucial 
 
 Dexterous in-hand manipulation encounters difficulties with real-time contact discovery and inference. We propose a contact-implicit model predictive controller that generates real-time contact plans, allowing robust long-horizon in-hand tasks without pre-defined sequences. This approach enables efficient, large-displacement in-hand tasks and generalizes to various objects without pre-training. Additionally, we establish a comprehensive manipulation framework for deformable linear objects (DLOs) that includes large deformation modeling, whole-body shape control, and precise terminal manipulation. Our research addresses challenges like model uncertainty, high dimensionality, and multiple constraints, advancing robotic capabilities in complex, dynamic environments.
 
+## Winner of ICRA 2024 Robotic Grasping and Manipulation Competition - In-Hand Manipulation Track
+
+<div class="row mt-3">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include video.liquid path="https://mingrui-yu.github.io/files/24_ICRA_RGMC.mp4" class="img-fluid rounded z-depth-1" controls=true autoplay=true %}
+    </div>
+</div>
+<div class="caption">
+    Video of the in-hand manipulation competition.
+</div>
+
+The [Robotic Grasping and Manipulation Competition - In-Hand Manipulation Track](https://cse.usf.edu/~yusun/rgmc/2024.html) is focused on reconfiguring objects in robot dexterous hands. The competition tasks focus on two essential skills: in-hand precise manipulation and in-hand object re-orientation. Our solution involving an open-sourced Leap Hand, trajectory optimization, and reinforcement learning won the **1st place** of the in-hand manipulation competition, and also won the **Most Elegant Solution Award** among all tracks in the RGMC.
+
 ## Contact-Implicit Model Predictive Control for Dexterous In-hand Manipulation: A Long-Horizon and Robust Approach
 
 {% cite jiang2024contact %}
@@ -21,7 +34,7 @@ Dexterous in-hand manipulation encounters difficulties with real-time contact di
 
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
-        {% include video.liquid path="https://director-of-g.github.io/in_hand_manipulation/video_short.mp4" class="img-fluid rounded z-depth-1" %}
+        {% include video.liquid path="https://director-of-g.github.io/in_hand_manipulation/video_short.mp4" class="img-fluid rounded z-depth-1" controls=true autoplay=true %}
     </div>
 </div>
 <div class="caption">
@@ -37,7 +50,7 @@ Inspired by recent advancements in contact-rich locomotion and manipulation, thi
 
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
-        {% include video.liquid path="https://director-of-g.github.io/push_in_clutter/video_short.mp4" class="img-fluid rounded z-depth-1" %}
+        {% include video.liquid path="https://director-of-g.github.io/push_in_clutter/video_short.mp4" class="img-fluid rounded z-depth-1" controls=true autoplay=true %}
     </div>
 </div>
 <div class="caption">

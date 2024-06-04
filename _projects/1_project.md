@@ -24,7 +24,7 @@ We seek to comprehensively address open challenges arising from the strong defor
 
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
-        {% include video.liquid path="https://mingrui-yu.github.io/DLO_following/main_1080p.mp4" class="img-fluid rounded z-depth-1" controls=true autoplay=true %}
+        {% include video.liquid path="https://mingrui-yu.github.io/files/24_iros_dlo_following.mp4" class="img-fluid rounded z-depth-1" controls=true autoplay=true %}
     </div>
 </div>
 
@@ -37,7 +37,7 @@ Most research on deformable linear object (DLO) manipulation assumes rigid grasp
 
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
-        {% include video.liquid path="https://mingrui-yu.github.io/DLO_planning_2/final_whole.mp4" class="img-fluid rounded z-depth-1" controls=true autoplay=true %}
+        {% include video.liquid path="https://mingrui-yu.github.io/files/23_DLO_planning_journal.mp4" class="img-fluid rounded z-depth-1" controls=true autoplay=true %}
     </div>
 </div>
 
@@ -50,7 +50,7 @@ This article focuses on the global moving and shaping of DLOs in constrained env
 
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
-        {% include video.liquid path="https://www.youtube.com/embed/X3WslgHU4VE" class="img-fluid rounded z-depth-1" controls=true autoplay=true %}
+        {% include figure.liquid loading="eager" path="https://mingrui-yu.github.io/files/23_icra_planning.gif" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
 </div>
 
@@ -62,7 +62,7 @@ Manipulating deformable linear objects (DLOs) to achieve desired shapes in const
 
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
-        {% include video.liquid path="https://mingrui-yu.github.io/videos/ICRA23_DLO_perception_video.mp4" class="img-fluid rounded z-depth-1" controls=true autoplay=true %}
+        {% include figure.liquid loading="eager" path="https://mingrui-yu.github.io/files/23_icra_perception.gif" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
 </div>
 
@@ -76,7 +76,7 @@ We focus on learning to robustly estimate the states of DLOs from single-frame p
 
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
-        {% include video.liquid path="https://www.youtube.com/embed/Gh5ncipo2SA" class="img-fluid rounded z-depth-1" controls=true autoplay=true %}
+        {% include figure.liquid loading="eager" path="https://mingrui-yu.github.io/files/22_TRO.gif" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
 </div>
 
