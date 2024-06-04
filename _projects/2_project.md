@@ -1,81 +1,60 @@
 ---
 layout: page
 title: Dexterous Manipulation
-description: a project with a background image and giscus comments
-img: assets/img/3.jpg
+description: contact-rich manipulation and in-hand manipulation
+img: assets/img/project_img/dex_prj_teaser.gif
 importance: 1
 category: work
-giscus_comments: true
+related_publications: true
 ---
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
+## Overview
 
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
+Dexterous manipulation in robotics involves precise control of objects, crucial for manufacturing, healthcare, and daily tasks. It includes both prehensile (grasping) and non-prehensile (non-grasping) methods, each with unique challenges. Non-prehensile manipulation, using simple end effectors like single rods, often faces under-actuation and complex planning constraints. To address this, we developed a method for object retrieval in cluttered environments using a rod-like pusher, combining an improved Rapidly-Exploring Random Tree (RRT) planner and a Model Predictive Control (MPC) scheme. This method's contact-aware features enhance task feasibility and efficiency by enabling active obstacle removal and switching contact faces, validated through simulations and experiments.
 
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
+Dexterous in-hand manipulation encounters difficulties with real-time contact discovery and inference. We propose a contact-implicit model predictive controller that generates real-time contact plans, allowing robust long-horizon in-hand tasks without pre-defined sequences. This approach enables efficient, large-displacement in-hand tasks and generalizes to various objects without pre-training. Additionally, we establish a comprehensive manipulation framework for deformable linear objects (DLOs) that includes large deformation modeling, whole-body shape control, and precise terminal manipulation. Our research addresses challenges like model uncertainty, high dimensionality, and multiple constraints, advancing robotic capabilities in complex, dynamic environments.
 
-<div class="row">
+## Winner of ICRA 2024 Robotic Grasping and Manipulation Competition - In-Hand Manipulation Track
+
+<div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include video.liquid path="https://mingrui-yu.github.io/files/24_ICRA_RGMC.mp4" class="img-fluid rounded z-depth-1" controls=true autoplay=true %}
     </div>
 </div>
 <div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
+    Video of the in-hand manipulation competition.
 </div>
-<div class="row">
+
+The [Robotic Grasping and Manipulation Competition - In-Hand Manipulation Track](https://cse.usf.edu/~yusun/rgmc/2024.html) is focused on reconfiguring objects in robot dexterous hands. The competition tasks focus on two essential skills: in-hand precise manipulation and in-hand object re-orientation. Our solution involving an open-sourced Leap Hand, trajectory optimization, and reinforcement learning won the **1st place** of the in-hand manipulation competition, and also won the **Most Elegant Solution Award** among all tracks in the RGMC.
+
+## Contact-Implicit Model Predictive Control for Dexterous In-hand Manipulation: A Long-Horizon and Robust Approach
+
+{% cite jiang2024contact %}
+[[Website](https://director-of-g.github.io/in_hand_manipulation/)]
+
+<div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include video.liquid path="https://director-of-g.github.io/in_hand_manipulation/video_short.mp4" class="img-fluid rounded z-depth-1" controls=true autoplay=true %}
     </div>
 </div>
 <div class="caption">
-    This image can also have a caption. It's like magic.
+    Video of the in-hand manipulation demo in simulation.
 </div>
 
-You can also put regular text between your rows of images.
-Say you wanted to write a little bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, _bled_ for your project, and then... you reveal its glory in the next row of images.
+Inspired by recent advancements in contact-rich locomotion and manipulation, this paper proposes a novel model-based approach to control dexterous in-hand manipulation and overcome the current limitations.The proposed approach has the attractive feature, which allows the robot to robustly execute long-horizon in-hand manipulation without pre-defined contact sequences or separated planning procedures. Compared with other model-based methods, such a long-horizon feature enables replanning and robust execution of contact-rich motions to achieve large-displacement in-hand tasks more efficiently; Compared with existing learning-based methods, the proposed approach achieves the dexterity and also generalizes to different objects without any pre-training. Detailed simulations and ablation studies demonstrate the efficiency and effectiveness of our method. It runs at 20Hz on the 23-degree-of-freedom long-horizon in-hand object rotation task.
 
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+## Contact-Aware Non-prehensile Robotic Manipulation for Object Retrieval in Cluttered Environments
+
+{% cite jiang2023contact %}
+[[Website](https://director-of-g.github.io/push_in_clutter/)]
+
+<div class="row mt-3">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include video.liquid path="https://director-of-g.github.io/push_in_clutter/video_short.mp4" class="img-fluid rounded z-depth-1" controls=true autoplay=true %}
     </div>
 </div>
 <div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
+    Video of the nonprehensile pushing demo in real world.
 </div>
 
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
-
-{% raw %}
-
-```html
-<div class="row justify-content-sm-center">
-  <div class="col-sm-8 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-  <div class="col-sm-4 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-</div>
-```
-
-{% endraw %}
+This paper proposes a new non-prehensile manipulation method for the task of object retrieval in cluttered environments, using a rod-like pusher. Different from existing methods, the proposed approach is with the contact-aware feature, which enables the synthesized effect of active removal of obstacles, avoidance behavior, and switching contact face for improved dexterity. Hence both the feasibility and efficiency of the task are greatly promoted. The performance of the proposed method is validated in a planar object retrieval task, where the target object, surrounded by many fixed or movable obstacles, is manipulated and isolated. Both simulation and experimental results are presented.
