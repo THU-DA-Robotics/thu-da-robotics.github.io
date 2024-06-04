@@ -5,7 +5,7 @@ description: contact-rich manipulation and in-hand manipulation
 img: assets/img/project_img/dex_prj_teaser.gif
 importance: 1
 category: work
-giscus_comments: true
+related_publications: true
 ---
 
 ## Overview
@@ -19,7 +19,14 @@ Dexterous in-hand manipulation encounters difficulties with real-time contact di
 {% cite jiang2024contact %} 
 [[Website](https://director-of-g.github.io/in_hand_manipulation/)]
 
-<iframe width="800" height="450" src="https://director-of-g.github.io/in_hand_manipulation/video_short.mp4" title="24_InHand_Sim" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen> </iframe>
+<div class="row mt-3">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include video.liquid path="https://director-of-g.github.io/in_hand_manipulation/video_short.mp4" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+<div class="caption">
+    Video of the in-hand manipulation demo in simulation.
+</div>
 
 Inspired by recent advancements in contact-rich locomotion and manipulation, this paper proposes a novel model-based approach to control dexterous in-hand manipulation and overcome the current limitations.The proposed approach has the attractive feature, which allows the robot to robustly execute long-horizon in-hand manipulation without pre-defined contact sequences or separated planning procedures. Compared with other model-based methods, such a long-horizon feature enables replanning and robust execution of contact-rich motions to achieve large-displacement in-hand tasks more efficiently; Compared with existing learning-based methods, the proposed approach achieves the dexterity and also generalizes to different objects without any pre-training. Detailed simulations and ablation studies demonstrate the efficiency and effectiveness of our method. It runs at 20Hz on the 23-degree-of-freedom long-horizon in-hand object rotation task.
 
@@ -28,7 +35,14 @@ Inspired by recent advancements in contact-rich locomotion and manipulation, thi
 {% cite jiang2023contact %} 
 [[Website](https://director-of-g.github.io/push_in_clutter/)]
 
-<iframe width="800" height="450" src="https://director-of-g.github.io/push_in_clutter/video_short.mp4" title="24_InHand_Sim" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen> </iframe>
+<div class="row mt-3">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include video.liquid path="https://director-of-g.github.io/push_in_clutter/video_short.mp4" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+<div class="caption">
+    Video of the nonprehensile pushing demo in real world.
+</div>
 
 This paper proposes a new non-prehensile manipulation method for the task of object retrieval in cluttered environments, using a rod-like pusher. Different from existing methods, the proposed approach is with the contact-aware feature, which enables the synthesized effect of active removal of obstacles, avoidance behavior, and switching contact face for improved dexterity. Hence both the feasibility and efficiency of the task are greatly promoted. The performance of the proposed method is validated in a planar object retrieval task, where the target object, surrounded by many fixed or movable obstacles, is manipulated and isolated. Both simulation and experimental results are presented.
 
