@@ -2,7 +2,7 @@
 layout: page
 title: Manipulation of Deformable Objects
 description: such as cables and ropes
-img: assets/img/project_img/deformable_object_manipulation.gif
+img: assets/img/project_img/deformable_object_manipulation.png
 importance: 1
 category: work
 related_publications: true
