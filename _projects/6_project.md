@@ -16,14 +16,14 @@ Overall, our goal is to address the unique challenges posed by medical applicati
 
 ## Papers
 
-- **Independence in the Home: A Wearable Interface for a Person with Quadriplegia to Teleoperate a Mobile Manipulator**
+<!-- - **Independence in the Home: A Wearable Interface for a Person with Quadriplegia to Teleoperate a Mobile Manipulator**
   [[Website](https://sites.google.com/view/hat2-teleop/home)]
 
 <div class="col-sm mt-3 mt-md-0">
     {% include video.liquid path="https://www.youtube.com/watch?v=XuQKCFJ3-V8" class="img-fluid rounded z-depth-1" %}
 </div>
 
-Teleoperation of mobile manipulators within a home environment can significantly enhance the independence of individuals with severe motor impairments, allowing them to regain the ability to perform self-care and household tasks. There is a critical need for novel teleoperation interfaces to offer effective alternatives for individuals with impairments who may encounter challenges in using existing interfaces due to physical limitations. In this work, we iterate on one such interface, HAT (Head-Worn Assistive Teleoperation), an inertial-based wearable integrated into any head-worn garment. We evaluate HAT through a 7-day in-home study with Henry Evans, a non-speaking individual with quadriplegia who has participated extensively in assistive robotics studies. We additionally evaluate HAT with a proposed shared control method for mobile manipulators termed Driver Assistance and demonstrate how the interface generalizes to other physical devices and contexts. Our results show that HAT is a strong teleoperation interface across key metrics including efficiency, errors, learning curve, and workload. Code and videos are located on our project website.
+Teleoperation of mobile manipulators within a home environment can significantly enhance the independence of individuals with severe motor impairments, allowing them to regain the ability to perform self-care and household tasks. There is a critical need for novel teleoperation interfaces to offer effective alternatives for individuals with impairments who may encounter challenges in using existing interfaces due to physical limitations. In this work, we iterate on one such interface, HAT (Head-Worn Assistive Teleoperation), an inertial-based wearable integrated into any head-worn garment. We evaluate HAT through a 7-day in-home study with Henry Evans, a non-speaking individual with quadriplegia who has participated extensively in assistive robotics studies. We additionally evaluate HAT with a proposed shared control method for mobile manipulators termed Driver Assistance and demonstrate how the interface generalizes to other physical devices and contexts. Our results show that HAT is a strong teleoperation interface across key metrics including efficiency, errors, learning curve, and workload. Code and videos are located on our project website. -->
 
 - **Visual Attention Based Cognitive Human–Robot Collaboration for Pedicle Screw Placement in Robot-Assisted Orthopedic Surgery**
 
