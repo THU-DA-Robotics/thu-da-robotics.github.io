@@ -8,13 +8,11 @@ category: work
 related_publications: true
 ---
 
-
 ## Overview
 
 Microscopic robotic manipulation can be applied in minimally invasive surgery, drug delivery, and molecular extraction. Our research focuses on micron-scale manipulations, aiming for non-damaging, universal, and highly dexterous autonomous micro manipulation. We tackle three key challenges: modeling, control, and planning, to bridge the gap between microscopic and macroscopic robotics.
 
 We propose a "universal and dexterous" micro-manipulation framework. First, physical fields are used to directly drive microrobots. The microrobots interact with target objects through contact or non-contact interactions, achieving "non-contact indirect" manipulation of the target via the physical field, thereby minimizing mechanical, optical, and magnetic damage. This framework, inspired by advanced macroscopic dexterous hands, offers high degrees of freedom and precision, applies to various physical fields, and does not require specially designed robot structures, ensuring universality.
-
 
 ## Efficient Model Learning and Adaptive Tracking Control of Magnetic Micro-Robots for Non-Contact Manipulation
 
@@ -28,7 +26,6 @@ We propose a "universal and dexterous" micro-manipulation framework. First, phys
         {% include figure.liquid loading="eager" path="assets/img/project_img/icra2024_certificate.png"  class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
-
 
 This work focuses on non-contact manipulation using magnetically driven robots. By utilizing the three-dimensional distribution of magnetic fields, magnetic microspheres are driven to roll forward, generating high-pressure and vortex areas in the fluid, which in turn propel the target object without direct contact. However, the combined effects of the magnetic field and fluid field result in challenging modeling. To address this, we propose an efficient learning and optimal control method for unknown models. Compared to current magnetic non-contact methods, this study achieves both precise manipulation and wide-range navigation.
 
