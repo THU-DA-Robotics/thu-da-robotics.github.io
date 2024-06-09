@@ -16,7 +16,7 @@ Our focus is on developing intelligent systems that facilitate seamless human-ro
 
 We establish a comprehensive framework for HRI, encompassing human behavior modeling, real-time interaction management, and multimodal communication. The primary research areas include accurate human intention recognition using machine learning and sensor fusion, adaptive interaction policies that consider human preferences and emotional states, and robust communication interfaces that leverage speech, gesture, and facial expression recognition. We aim to overcome significant challenges such as variability in human behavior, dynamic and unstructured environments, and the need for personalized interaction, thereby advancing the state of the art in human-robot collaboration.
 
-## A Complementary Framework for Human–Robot Collaboration With a Mixed AR–Haptic Interface**
+## A Complementary Framework for Human–Robot Collaboration With a Mixed AR–Haptic Interface
 
 {% cite yan2024complementary %}
 
@@ -24,7 +24,7 @@ We establish a comprehensive framework for HRI, encompassing human behavior mode
 
 There is invariably a tradeoff between safety and efficiency for collaborative robots (cobots) in human–robot collaborations (HRCs). Robots that interact minimally with humans can work with high speed and accuracy but cannot adapt to new tasks or respond to unforeseen changes, whereas robots that work closely with humans can but only by becoming passive to humans, meaning that their main tasks are suspended and efficiency compromised. Accordingly, this article proposes a new complementary framework for HRC that balances the safety of humans and the efficiency of robots. In this framework, the robot carries out given tasks using a vision-based adaptive controller, and the human expert collaborates with the robot in the null space. Such a decoupling drives the robot to deal with existing issues in task space [e.g., uncalibrated camera, limited field of view (FOV)] and null space (e.g., joint limits) by itself while allowing the expert to adjust the configuration of the robot body to respond to unforeseen changes (e.g., sudden invasion, change in environment) without affecting the robot’s main task. In addition, the robot can simultaneously learn the expert’s demonstration in task space and null space beforehand with dynamic movement primitives (DMPs). Therefore, an expert’s knowledge and a robot’s capability are explored and complement each other. Human demonstration and involvement are enabled via a mixed interaction interface, i.e., augmented reality (AR) and haptic devices. The stability of the closed-loop system is rigorously proved with Lyapunov methods. Experimental results in various scenarios are presented to illustrate the performance of the proposed method.
 
-## Adaptive Vision-Based Control of Redundant Robots with Null-Space Interaction for Human-Robot Collaboration**
+## Adaptive Vision-Based Control of Redundant Robots with Null-Space Interaction for Human-Robot Collaboration
 
 {% include video.liquid path="assets/video/yanicra22_video_final.mp4" class="img-fluid rounded z-depth-1" controls=true %}
 
