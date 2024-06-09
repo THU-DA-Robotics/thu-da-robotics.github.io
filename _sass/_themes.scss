@@ -63,6 +63,13 @@
     width: $back-to-top-width;
     z-index: $back-to-top-z-index;
   }
+
+  #da-logo-light {
+    display: block;
+  }
+  #da-logo-dark {
+    display: none;
+  }
 }
 
 html[data-theme="dark"] {
@@ -121,6 +128,13 @@ html[data-theme-setting="dark"] {
   #back-to-top {
     color: var(--global-back-to-top-text-color);
     background: var(--global-back-to-top-bg-color);
+  }
+
+  #da-logo-light {
+    display: none;
+  }
+  #da-logo-dark {
+    display: block;
   }
 }
 
