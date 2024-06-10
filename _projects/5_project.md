@@ -65,7 +65,3 @@ We propose a new trajectory-tracking control scheme for cable-driven upper-limb 
 We proposes a new motion planning scheme for upper-limb exoskeleton robots, which drives the robot to provide customized, safe, and individualized assistance using both
 human demonstration and interactive learning.
 Specifically, the robot first learns from a group of healthy subjects to generate a reference motion trajectory via probabilistic movement primitives (ProMP). It then learns from the patient during the training process to further shape the trajectory inside a moving safe region. The interactive data is fed back into the ProMP iteratively to enhance the individualized features for as long as the training process continues.
-
-
-
-
