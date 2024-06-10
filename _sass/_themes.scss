@@ -108,6 +108,13 @@ html[data-theme="dark"] {
   .repo-img-dark {
     display: block;
   }
+
+  #da-logo-light {
+    display: none;
+  }
+  #da-logo-dark {
+    display: block;
+  }
 }
 
 html[data-theme-setting="dark"] {
@@ -128,13 +135,6 @@ html[data-theme-setting="dark"] {
   #back-to-top {
     color: var(--global-back-to-top-text-color);
     background: var(--global-back-to-top-bg-color);
-  }
-
-  #da-logo-light {
-    display: none;
-  }
-  #da-logo-dark {
-    display: block;
   }
 }
 
