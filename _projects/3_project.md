@@ -20,7 +20,7 @@ We propose a "universal and dexterous" micro-manipulation framework. First, phys
 
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/project_img/magnetic_noncontact.png" class="img-fluid rounded z-depth-1" %}
+        {% include video.liquid path="https://youtu.be/no9D4OZ47ts" class="img-fluid rounded z-depth-1" controls=true autoplay=true %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
         {% include figure.liquid loading="eager" path="assets/img/project_img/icra2024_certificate.png"  class="img-fluid rounded z-depth-1" %}
@@ -35,7 +35,7 @@ This work focuses on non-contact manipulation using magnetically driven robots. 
 
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/project_img/ots_multifinger.png" class="img-fluid rounded z-depth-1" %}
+        {% include video.liquid path="https://youtu.be/no9D4OZ47ts" class="img-fluid rounded z-depth-1" controls=true autoplay=true %}
     </div>
 </div>
 
