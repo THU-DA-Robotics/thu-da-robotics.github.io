@@ -4,6 +4,7 @@
 
 title: blank # the website title (if blank, full name will be used instead)
 first_name: Intelligent Robotic Manipulation
+abbr_name: IRM # added by cc
 middle_name:
 last_name: Lab
 email:
@@ -184,6 +185,9 @@ collections:
   projects:
     output: true
     permalink: /projects/:path/
+  people:
+    output: true
+    permalink: /people/:path/
 
 announcements:
   enabled: true

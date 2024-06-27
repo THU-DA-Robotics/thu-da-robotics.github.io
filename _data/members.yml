@@ -1,0 +1,56 @@
+- name: PhD Students
+  full: true
+  list:
+    - name: Mingrui Yu / 于铭瑞
+      image: assets/img/people/yumingrui.jpg
+      website: https://mingrui-yu.github.io
+      alt: I am Mingrui. I am wearing a gray polo shirt.
+    - name: Xiangjie Yan / 严相杰
+      image: assets/img/people/yanxiangjie.jpg
+      website: https://yanseim.github.io
+      alt: I am Xiangjie. I am wearing a black shirt.
+    - name: Yongyi Jia / 贾永奕
+      image: assets/img/people/jiayongyi.jpg
+      alt: I am Yongyi. I am wearing a white shirt.
+    - name: Kangchen Lv / 吕康晨
+      image: assets/img/people/lvkangchen.jpg
+      alt: I am Kangchen. I am wearing a suit.
+    - name: Yu Chen / 陈煜
+      image: assets/img/people/chenyu.jpg
+      alt: I am Yu. I am wearing a green shirt.
+    - name: Hanzhong Zhong / 钟瀚中
+      image: assets/img/people/zhonghanzhong.jpg
+      alt: I am Hanzhong. I am wearing a blue jacket.
+    - name: Yongpeng Jiang / 姜永鹏
+      image: assets/img/people/jiangyongpeng.jpg
+      website: https://director-of-g.github.io
+      alt: I am Yongpeng. I am wearing a blue shirt.
+    - name: Dongjie Zhu / 朱东杰
+      image: assets/img/people/zhudongjie.jpg
+      alt: I am Dongjie. I am wearing a suit.
+- name: Master's Students
+  full: true
+  list:
+    - name: Yixiao Nie / 聂亦潇
+      image: assets/img/people/nieyixiao.jpg
+      alt: I am Yixiao. I am wearing a black shirt.
+    - name: Haier Zhu / 朱海尔
+      image: assets/img/people/zhuhaier.jpg
+      alt: I am Haier. I am wearing a gray shirt.
+    - name: Bo Yan / 晏博
+      image: assets/img/people/yanbo.jpg
+      alt: I am Bo. I am wearing a blue jacket.
+- name: Undergraduate Students
+  full: true
+  list:
+    - name: Chen Chen / 陈辰
+      website: https://calaw.cc/
+      image: assets/img/people/chenchen.jpg
+      alt: I am Chen. I am wearing a white shirt.
+- name: Alumni
+  full: false
+  list:
+    - name: Hao Liu
+    - name: Xuan Zhang
+    - name: Guokun Wu / 吴国昆
+    - name: Yana Shu / 舒雅娜
