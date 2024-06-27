@@ -13,6 +13,9 @@
         - name: Yongyi Jia / 贾永奕
           image: assets/img/people/jiayongyi.jpg
           alt: I am Yongyi. I am wearing a white shirt.
+        - name: Kangchen Lv / 吕康晨
+          image: assets/img/people/lvkangchen.jpg
+          alt: I am Kangchen. I am wearing a suit.
         - name: Yu Chen / 陈煜
           image: assets/img/people/chenyu.jpg
           alt: I am Yu. I am wearing a green shirt.
@@ -30,21 +33,15 @@
   list:
     - full: true
       list:
-        - name: Kangchen Lv / 吕康晨
-          image: assets/img/people/lvkangchen.jpg
-          alt: I am Kangchen. I am wearing a suit.
-        - name: Guokun Wu / 吴国昆
-          image: assets/img/people/wuguokun.jpg
-          alt: I am Guokun. I am wearing a gray shirt.
-        - name: Yana Shu / 舒雅娜
-          image: assets/img/people/shuyana.jpg
-          alt: I am Yana. I am wearing a blue jacket.
         - name: Yixiao Nie / 聂亦潇
           image: assets/img/people/nieyixiao.jpg
           alt: I am Yixiao. I am wearing a black shirt.
         - name: Haier Zhu / 朱海尔
           image: assets/img/people/zhuhaier.jpg
           alt: I am Haier. I am wearing a gray shirt.
+        - name: Bo Yan / 晏博
+          image: assets/img/people/yanbo.jpg
+          alt: I am Bo. I am wearing a blue jacket.
 - name: Undergraduate Students
   list:
     - full: true
@@ -59,3 +56,5 @@
       list:
         - name: Hao Liu
         - name: Xuan Zhang
+        - name: Guokun Wu / 吴国昆
+        - name: Yana Shu / 舒雅娜
