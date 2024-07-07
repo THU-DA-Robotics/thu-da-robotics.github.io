@@ -26,13 +26,15 @@ profiles:
         <div class="w-100"></div>
       {% endif %}
       {% if group.full %}
+        <div style="margin-bottom:0.5rem"></div>
         <div class="row">
           {% for member in group.list %}
             <div class="col-xl-3 col-lg-3 col-md-4 text-center col-sm-6 col-xs-6">
               <a target="_blank" href="{{member.website}}">
                 {% include figure.liquid loading="eager" path=member.image alt=member.alt class="img-fluid rounded" %} 
               </a>
-              {{ member.name }}
+              <p style="margin-bottom:1.5rem">{{ member.name }}</p>
+              <!-- the figure has 1rem vertical margin -->
             </div>
           {% endfor %}
         </div>
