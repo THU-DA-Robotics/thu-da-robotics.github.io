@@ -50,7 +50,7 @@
 - name: Alumni
   full: false
   list:
-    - name: Hao Liu
-    - name: Xuan Zhang
     - name: Guokun Wu / 吴国昆
     - name: Yana Shu / 舒雅娜
+    - name: Xuan Zhang / 张轩
+    - name: Hao Liu
