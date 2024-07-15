@@ -4,7 +4,7 @@ permalink: /members/
 title: Members
 nav: true
 nav_order: 7
-display_categories: [PhD Students, Master's Students, Undergraduate Students, Alumni]
+display_categories: [Postdoctoral Researchers, PhD Students, Master's Students, Undergraduate Students, Alumni]
 horizontal: true
 profiles:
   # if you want to include more than one profile, just replicate the following block
@@ -21,15 +21,13 @@ profiles:
   {% for group in site.data.members %}
     {% if group.list.size > 0 %}
       {% if group.name %}
-        <div class="w-100"></div>
-          <h2>{{ group.name }}</h2>
-        <div class="w-100"></div>
+        <h2>{{ group.name }}</h2>
       {% endif %}
       {% if group.full %}
         <div style="margin-bottom:0.5rem"></div>
-        <div class="row">
+        <div class="row row-cols-2 row-cols-sm-3 row-cols-md-4">
           {% for member in group.list %}
-            <div class="col-xl-3 col-lg-3 col-md-4 text-center col-sm-6 col-xs-6">
+            <div class="col text-center">
               <a target="_blank" href="{{member.website}}">
                 {% include figure.liquid loading="eager" path=member.image alt=member.alt class="img-fluid rounded" %} 
               </a>
@@ -39,6 +37,7 @@ profiles:
           {% endfor %}
         </div>
       {% else %}
+        <div class="w-100"></div>
         <ul>
         {% for member in group.list %}
           {% if member.website %}
