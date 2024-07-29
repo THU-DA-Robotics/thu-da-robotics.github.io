@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Four papers accepted by IROS 2024! Congratulations! :sparkles: :smile:
+Four papers accepted by **IROS 2024**! Congratulations! :sparkles: :smile:
