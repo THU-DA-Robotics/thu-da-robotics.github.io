@@ -43,7 +43,8 @@ layout: default
     <!-- News -->
     {% if page.news and site.announcements.enabled %}
       <h2>
-        <a href="{{ '/news/' | relative_url }}" style="color: inherit">news</a>
+        <a href="{{ '/news/' | relative_url }}" style="color: inherit">News</a>
+        {% comment %} changed by cc {% endcomment %}
       </h2>
       {% include news.liquid limit=true %}
     {% endif %}
@@ -77,9 +78,14 @@ layout: default
     <div class="row">
       <div class="col"></div>
       <div class="col-sm-9 col-md-6">
-        <img src="assets/img/zdhx_logo.svg" width="100%" alt="Logo of Department of Automation, Tsinghua University">
+        <img id="da-logo-light" src="assets/img/zdhx_logo_vec.svg" width="100%" alt="Logo of Department of Automation, Tsinghua University">
+        <img id="da-logo-dark" src="assets/img/zdhx_logo_vec_dark.svg" width="100%" alt="Logo of Department of Automation, Tsinghua University">
       </div>
       <div class="col"></div>
     </div>
+
+    {% if site.newsletter.enabled and site.footer_fixed %}
+      {% include scripts/newsletter.liquid center=true %}
+    {% endif %}
   </article>
 </div>

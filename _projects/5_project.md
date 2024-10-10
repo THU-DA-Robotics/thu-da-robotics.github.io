@@ -1,80 +1,67 @@
 ---
 layout: page
 title: Exoskeleton Robots
-description: a project with a background image
-img: assets/img/1.jpg
+description: rehabilitation and human augmentation
+img: assets/img/project_img/exo_all.gif
 importance: 1
 category: work
+related_publications: true
 ---
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
+## Overview
 
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
+Exoskeleton robots are a type of wearable robot primarily designed for two main functions: rehabilitation training and enhancing human motor functions. Depending on the assisted body part, they can be classified into lower limb exoskeletons and upper limb exoskeletons.
+We focus on the interactive control and trajectory planning of exoskeleton robots. By integrating compliant actuators and generative models, we aim to develop safe, reliable lower limb and upper limb exoskeletons that can provide personalized assistance.
 
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
+We have developed a unified interactive controller and a safety-based trajectory planning framework for lower limb exoskeletons with series elastic actuators (SEA) and upper limb exoskeletons with cable-driven SEA.
 
-<div class="row">
+## Multi-Modal Anomaly Detection with Proprioceptive Perception
+
+{% cite zhang2023multi %}
+
+<div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include video.liquid path="https://stan-32.github.io/files/zx2023.mp4" class="img-fluid rounded z-depth-1" controls=true autoplay=true %}
     </div>
+</div>
+
+During the closely-coupled interaction, a mismatch between the wearer and the robot may result in physical conflict, which could affect assistance efficiency or even compromise safety. Therefore, such conflicts should be accurately detected and then properly relaxed by adjusting the robot's action. This work proposes a new learning scheme to detect physical conflicts between humans and robots.
+The constructed learning network receives multi-modal information from proprioceptive sensors and then outputs the anomaly score to specify the physical conflict, which score is further used to continuously adjust the robot impedance to ensure a safe and efficient interaction.
+
+## Individualized Human-In-the-Loop Adaption Framework for Lower-Limb Exoskeleton
+
+{% cite chen2023learning %}
+
+<div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include video.liquid path="https://stan-32.github.io/files/chen2023indi.mp4" class="img-fluid rounded z-depth-1" controls=true autoplay=true %}
     </div>
+</div>
+
+The generalizability of robots across different wearers in multiple tasks is important to ensure that the robot can provide correct and effective assistance in actual implementation. However, most lower-limb exoskeleton robots exhibit only limited generalizability. Therefore, we propose a human-in-the-loop learning and adaptation framework for exoskeleton robots to improve their performance in various tasks and for different wearers. To suit different wearers, an individualized walking trajectory is generated online using dynamic movement primitives and Bayes optimization. To accommodate various tasks, a task translator is constructed using a neural network to generalize a trajectory to more complex scenarios.
+
+## Interactive Control for Cable-Driven Upper-Limb Exoskeleton Robots with Series Elastic Actuators
+
+{% cite shu2023two %}
+
+<div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include video.liquid path="https://stan-32.github.io/files/sya2023.mp4" class="img-fluid rounded z-depth-1" controls=true autoplay=true %}
     </div>
 </div>
-<div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
-</div>
-<div class="row">
+
+We propose a new trajectory-tracking control scheme for cable-driven upper-limb exoskeleton robots with series elastic actuators. The control objectives are achieved in two stages: Stage I is to approximate then compensate for unmodelled disturbances with iterative learning techniques; Stage II is to employ a suboptimal model predictive controller to drive the robot to track the desired trajectory. While controlling such a robot is not trivial, the proposed control scheme exhibits the advantages of force-sensorlessness, high accuracy, and low complexity compared with other methods in the real-world experiments.
+
+## Safe and Individualized Motion Planning for Upper-limb Exoskeleton
+
+{% cite chen2023safe %}
+
+<div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include video.liquid path="https://stan-32.github.io/files/chen2023safe.mp4" class="img-fluid rounded z-depth-1" controls=true autoplay=true %}
     </div>
 </div>
-<div class="caption">
-    This image can also have a caption. It's like magic.
-</div>
 
-You can also put regular text between your rows of images.
-Say you wanted to write a little bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, _bled_ for your project, and then... you reveal its glory in the next row of images.
-
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
-</div>
-
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
-
-{% raw %}
-
-```html
-<div class="row justify-content-sm-center">
-  <div class="col-sm-8 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-  <div class="col-sm-4 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-</div>
-```
-
-{% endraw %}
+We proposes a new motion planning scheme for upper-limb exoskeleton robots, which drives the robot to provide customized, safe, and individualized assistance using both
+human demonstration and interactive learning.
+Specifically, the robot first learns from a group of healthy subjects to generate a reference motion trajectory via probabilistic movement primitives (ProMP). It then learns from the patient during the training process to further shape the trajectory inside a moving safe region. The interactive data is fed back into the ProMP iteratively to enhance the individualized features for as long as the training process continues.

@@ -2,7 +2,7 @@
 layout: page
 title: Dexterous Manipulation
 description: contact-rich manipulation and in-hand manipulation
-img: assets/img/project_img/dex_prj_teaser.gif
+img: assets/img/project_img/dexterous_manipulation.jpg
 importance: 1
 category: work
 related_publications: true
