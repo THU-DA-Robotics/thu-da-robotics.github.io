@@ -7,13 +7,17 @@ importance: 1
 category: work
 related_publications: true
 ---
+
 ## Overview
+
 Human-robot interaction (HRI) is a multidisciplinary field that explores the dynamics between humans and robots, aiming to enhance the efficiency, safety, and naturalness of these interactions. Unlike traditional automation systems, HRI systems are designed to interact with humans in a socially intuitive manner, requiring sophisticated understanding of human behavior, intentions, and social norms. This necessitates advances in perception, communication, and decision-making capabilities of robots.
 
 Our focus is on developing intelligent systems that facilitate seamless human-robot collaboration. By addressing critical scientific challenges such as real-time perception of human actions, adaptive interaction strategies, and intuitive communication methods, we aim to create robots that can understand and respond to human needs in a context-aware manner.
 
 We establish a comprehensive framework for HRI, encompassing human behavior modeling, real-time interaction management, and multimodal communication. The primary research areas include accurate human intention recognition using machine learning and sensor fusion, adaptive interaction policies that consider human preferences and emotional states, and robust communication interfaces that leverage speech, gesture, and facial expression recognition. We aim to overcome significant challenges such as variability in human behavior, dynamic and unstructured environments, and the need for personalized interaction, thereby advancing the state of the art in human-robot collaboration.
+
 ## Papers
+
 - **A Complementary Framework for Human–Robot Collaboration With a Mixed AR–Haptic Interface**
 {% cite yan2024complementary %}
 <div class="row">
