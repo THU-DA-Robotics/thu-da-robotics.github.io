@@ -24,9 +24,13 @@ Current orthopedic robotic systems largely focus on navigation, aiding surgeons 
 
 ## A Unified Interaction Control Framework for Safe Robotic Ultrasound Scanning with Human-Intention-Aware Compliance
 
-{% cite yan2023multimodal %}
+{% cite yan2024unified %}
 [[Website](https://yanseim.github.io/iros24ultrasound/)]
 
-{% include video.liquid path="https://yanseim.github.io/assets/videos/iros24_with_song_midea.mp4" class="img-fluid rounded z-depth-1" controls=true %}
+<div class="row justify-content-center">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include video.liquid path="https://yanseim.github.io/assets/videos/iros2024_long.mp4" class="img-fluid rounded z-depth-1" controls=true %}
+    </div>
+</div>
 
 The ultrasound scanning robot commonly works in an environment where human-robot interactions frequently arise. Most control methods for ultrasound scanning only consider one specific interaction situation, or use hard switching between different controllers for different situations, which reduces safety and efficiency. In this paper, we propose a unified interaction control framework for ultrasound scanning robots capable of handling all common interactions, distinguishing both human-intended and unintended types, and adapting with appropriate compliance. Specifically, the robot suspends or modulates its ongoing main task if the interaction is intended, e.g., when the doctor grasps the robot to lead the end effector actively. Furthermore, it can identify unintended interactions and avoid potential collision in the null space beforehand. Even if the collision has happened, it can become compliant with the collision in the null space and try to reduce its impact on the main task (where the scan is ongoing) kinematically and dynamically. The multiple situations are integrated into a unified controller with a smooth transition to deal with the interactions by exhibiting human-intention-aware compliance. Experimental results demonstrate the framework’s ability to cope with all common interactions including intended intervention and unintended collision in a collaborative carotid artery ultrasound scanning task.
