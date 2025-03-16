@@ -30,7 +30,7 @@ The constructed learning network receives multi-modal information from proprioce
 
 ## Individualized Human-In-the-Loop Adaption Framework for Lower-Limb Exoskeleton
 
-{% cite Chen2024LearningTA %}
+{% cite chen2024learning %}
 
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
