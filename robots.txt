@@ -1,1 +1,4 @@
-User-agent: * Disallow: Sitemap: https://thu-da-robotics.github.io/sitemap.xml
+User-agent: *
+Disallow:
+
+Sitemap: https://thu-da-robotics.github.io/sitemap.xml
