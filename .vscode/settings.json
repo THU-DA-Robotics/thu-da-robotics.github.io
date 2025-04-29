@@ -74,8 +74,6 @@
   ],
   "latex-workshop.bibtex-fields.sort.enabled": true,
   "latex-workshop.bibtex-format.sort.enabled": true,
-  "latex-workshop.bibtex-format.sortby": [
-    "year-desc"
-  ],
+  "latex-workshop.bibtex-format.sortby": ["year-desc"],
   "latex-workshop.bibtex-format.trailingComma": true
 }

@@ -29,7 +29,7 @@ profiles:
           {% for member in group.list %}
             <div class="col text-center">
               {% if member.website %}
-                <a target="_blank" href="{{member.website}}">
+                <a target="_blank" href="{{ member.website }}">
                   {% include figure.liquid loading="eager" path=member.image alt=member.alt class="img-fluid rounded" %} 
                 </a>
               {% else %}
@@ -45,7 +45,7 @@ profiles:
         <ul>
         {% for member in group.list %}
           {% if member.website %}
-            <li><a target="_blank" href="{{member.website}}">{{ member.name }}</a></li>
+            <li><a target="_blank" href="{{ member.website }}">{{ member.name }}</a></li>
           {% else %}
             <li>{{ member.name }}</li>
           {% endif %} 
