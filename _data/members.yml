@@ -35,6 +35,9 @@
     - name: Dongjie Zhu / 朱东杰
       image: assets/img/people/zhudongjie.jpg
       alt: I am Dongjie. I am wearing a suit.
+    - name: Daoheng Li / 李道衡
+      image: assets/img/people/lidaoheng.jpg
+      alt: I am Daoheng. I am wearing a black jacket.
 - name: Master's Students
   full: true
   list:
@@ -47,13 +50,25 @@
     - name: Bo Yan / 晏博
       image: assets/img/people/yanbo.jpg
       alt: I am Bo. I am wearing a blue jacket.
-- name: Undergraduate Students
-  full: true
-  list:
     - name: Chen Chen / 陈辰
       website: https://calaw.cc/
       image: assets/img/people/chenchen.jpg
       alt: I am Chen. I am wearing a white shirt.
+    - name: Qikai Zou / 邹祺凯
+      image: assets/img/people/zouqikai.jpg
+      alt: I am Qikai. I am wearing a suit.
+- name: Undergraduate Students
+  full: true
+  list:
+    - name: Shihefeng Wang / 王施赫丰
+      image: assets/img/people/wangshihefeng.jpg
+      alt: I am Shihefeng. I am wearing a blue shirt.
+    - name: Qingqi Zhang / 张清琦
+      image: assets/img/people/zhangqingqi.jpg
+      alt: I am Qingqi. I am wearing a dark blue shirt.
+    - name: Yue Ma / 马跃
+      image: assets/img/people/mayue.jpg
+      alt: I am Yue. I am wearing a suit.
 - name: Alumni
   full: false
   list:

@@ -28,9 +28,13 @@ profiles:
         <div class="row row-cols-2 row-cols-sm-3 row-cols-md-4">
           {% for member in group.list %}
             <div class="col text-center">
-              <a target="_blank" href="{{member.website}}">
+              {% if member.website %}
+                <a target="_blank" href="{{ member.website }}">
+                  {% include figure.liquid loading="eager" path=member.image alt=member.alt class="img-fluid rounded" %} 
+                </a>
+              {% else %}
                 {% include figure.liquid loading="eager" path=member.image alt=member.alt class="img-fluid rounded" %} 
-              </a>
+              {% endif %}
               <p style="margin-bottom:1.5rem">{{ member.name }}</p>
               <!-- the figure has 1rem vertical margin -->
             </div>
@@ -41,7 +45,7 @@ profiles:
         <ul>
         {% for member in group.list %}
           {% if member.website %}
-            <li><a target="_blank" href="{{member.website}}">{{ member.name }}</a></li>
+            <li><a target="_blank" href="{{ member.website }}">{{ member.name }}</a></li>
           {% else %}
             <li>{{ member.name }}</li>
           {% endif %} 

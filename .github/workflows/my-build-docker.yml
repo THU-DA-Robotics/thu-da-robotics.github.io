@@ -1,0 +1,89 @@
+name: Build My Docker Image Slim
+
+on:
+  push:
+    branches: [master, main]
+    paths:
+      - ".github/workflows/my-build-docker.yml"
+      - ".github/workflows/deploy-image.yml"
+      - "bin/entry_point.sh"
+      - "Dockerfile"
+      - "Gemfile"
+      - "Gemfile.lock"
+      - "package.json"
+      - "package-lock.json"
+  workflow_dispatch:
+
+jobs:
+  build-and-slim:
+    strategy:
+      matrix:
+        arch: [amd64, arm64]
+        include:
+          - arch: amd64
+            runner: ubuntu-latest
+          - arch: arm64
+            runner: ubuntu-24.04-arm
+
+    runs-on: ${{ matrix.runner }}
+    outputs:
+      arch: ${{ matrix.arch }}
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Build image (not pushed yet)
+        uses: docker/build-push-action@v6
+        with:
+          context: .
+          push: false
+          tags: ${{ secrets.DOCKER_REGISTRY }}/calaw/al-folio-irml:${{ matrix.arch }}
+
+      - name: Update docker-compose and config
+        run: |
+          sed -i "s|\.:|${{ github.workspace }}:|g" docker-compose.yml
+          sed -i -E "s|image: .+|image: ${{ secrets.DOCKER_REGISTRY }}/calaw/al-folio-irml:${{ matrix.arch }}|" docker-compose.yml
+          sed -i '/^\s*- ".gif"$/d' _config.yml
+
+      - name: Slim the image
+        uses: kitabisa/docker-slim-action@v1
+        env:
+          DSLIM_COMPOSE_FILE: ${{ github.workspace }}/docker-compose.yml
+          DSLIM_TARGET_COMPOSE_SVC: jekyll
+          DSLIM_HTTP_PROBE_RETRY_WAIT: 10
+          DSLIM_HTTP_PROBE_RETRY_COUNT: 100
+        with:
+          target: ${{ secrets.DOCKER_REGISTRY }}/calaw/al-folio-irml
+          tag: slim-${{ matrix.arch }}
+
+      - name: Login to Docker registry
+        uses: docker/login-action@v3
+        with:
+          registry: ${{ secrets.DOCKER_REGISTRY }}
+          username: ${{ secrets.DOCKER_USERNAME }}
+          password: ${{ secrets.DOCKER_PASSWORD }}
+
+      # Push to the registry
+      - name: Push to the registry
+        run: docker image push "${{ secrets.DOCKER_REGISTRY }}/calaw/al-folio-irml:slim-${{ matrix.arch }}"
+
+  push-and-manifest:
+    name: Create Multi-Arch Manifest
+    needs: build-and-slim
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Login to Docker registry
+        uses: docker/login-action@v3
+        with:
+          registry: ${{ secrets.DOCKER_REGISTRY }}
+          username: ${{ secrets.DOCKER_USERNAME }}
+          password: ${{ secrets.DOCKER_PASSWORD }}
+
+      - name: Create and push multi-arch manifest
+        run: |
+          docker manifest create ${{ secrets.DOCKER_REGISTRY }}/calaw/al-folio-irml:latest \
+            --amend ${{ secrets.DOCKER_REGISTRY }}/calaw/al-folio-irml:slim-amd64 \
+            --amend ${{ secrets.DOCKER_REGISTRY }}/calaw/al-folio-irml:slim-arm64
+          docker manifest push ${{ secrets.DOCKER_REGISTRY }}/calaw/al-folio-irml:latest
