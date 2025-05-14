@@ -86,6 +86,14 @@ jobs:
           valueFile: "_config.yml"
           propertyPath: "giscus.repo"
           value: ${{ github.repository }}
+      - name: Disable imagemagick for pull_request
+        if: github.event_name == 'pull_request'
+        uses: fjogeleit/yaml-update-action@main
+        with:
+          commitChange: false
+          valueFile: "_config.yml"
+          propertyPath: "imagemagick.enabled"
+          value: false
       - name: Install and Build 🔧
         run: |
           sudo apt-get update && sudo apt-get install -y imagemagick
@@ -101,3 +109,17 @@ jobs:
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           folder: _site
+      - name: Link Checker 🔗
+        id: lychee
+        uses: lycheeverse/lychee-action@v2
+        with:
+          fail: false
+          # only check local links
+          args: --offline --remap '_site(/?.*)/assets/(.*) _site/assets/$2' --verbose --no-progress '_site/**/*.html'
+      - name: Create Issue From File
+        if: steps.lychee.outputs.exit_code != 0
+        uses: peter-evans/create-issue-from-file@v5
+        with:
+          title: Link Checker Report
+          content-filepath: ./lychee/out.md
+          labels: report, automated issue
