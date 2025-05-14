@@ -14,6 +14,24 @@ Dexterous manipulation in robotics involves precise control of objects, crucial 
 
 Dexterous in-hand manipulation encounters difficulties with real-time contact discovery and inference. We propose a contact-implicit model predictive controller that generates real-time contact plans, allowing robust long-horizon in-hand tasks without pre-defined sequences. This approach enables efficient, large-displacement in-hand tasks and generalizes to various objects without pre-training. Additionally, we establish a comprehensive manipulation framework for deformable linear objects (DLOs) that includes large deformation modeling, whole-body shape control, and precise terminal manipulation. Our research addresses challenges like model uncertainty, high dimensionality, and multiple constraints, advancing robotic capabilities in complex, dynamic environments.
 
+## Robotic In-Hand Manipulation for Large-Range Precise Object Movement
+
+{% cite yu2025robotic %}
+[[Website](https://rgmc-xl-team.github.io/ingrasp_manipulation/)]
+
+<div class="row mt-3">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include video.liquid path="https://rgmc-xl-team.github.io/ingrasp_manipulation/novel_objects.mp4" class="img-fluid rounded z-depth-1" controls=true autoplay=true %}
+    </div>
+</div>
+<div class="caption">
+    Video of the in-grasp manipulation.
+</div>
+
+In-hand manipulation using multiple dexterous fingers is a critical robotic skill that can reduce the reliance on large arm motions, thereby saving space and energy. This letter focuses on in-grasp object movement, which refers to manipulating an object to a desired pose through only finger motions within a stable grasp. The key challenge lies in simultaneously achieving high precision and large-range movements while maintaining a constant stable grasp. To address this problem, we propose a simple and practical approach based on kinematic trajectory optimization with no need for pretraining or object geometries, which can be easily applied to novel objects in real-world scenarios. Adopting this approach, we won the championship for the in-hand manipulation track at the
+9th Robotic Grasping and Manipulation Competition (RGMC) held at ICRA 2024. Implementation details, discussion, and further quantitative experimental results are presented in this letter, which aims to comprehensively evaluate our approach and share our key takeaways from the competition.
+
+
 ## Winner of ICRA 2024 Robotic Grasping and Manipulation Competition - In-Hand Manipulation Track
 
 <div class="row mt-3">
