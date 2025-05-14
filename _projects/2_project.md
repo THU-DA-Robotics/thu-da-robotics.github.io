@@ -31,7 +31,6 @@ Dexterous in-hand manipulation encounters difficulties with real-time contact di
 In-hand manipulation using multiple dexterous fingers is a critical robotic skill that can reduce the reliance on large arm motions, thereby saving space and energy. This letter focuses on in-grasp object movement, which refers to manipulating an object to a desired pose through only finger motions within a stable grasp. The key challenge lies in simultaneously achieving high precision and large-range movements while maintaining a constant stable grasp. To address this problem, we propose a simple and practical approach based on kinematic trajectory optimization with no need for pretraining or object geometries, which can be easily applied to novel objects in real-world scenarios. Adopting this approach, we won the championship for the in-hand manipulation track at the
 9th Robotic Grasping and Manipulation Competition (RGMC) held at ICRA 2024. Implementation details, discussion, and further quantitative experimental results are presented in this letter, which aims to comprehensively evaluate our approach and share our key takeaways from the competition.
 
-
 ## Winner of ICRA 2024 Robotic Grasping and Manipulation Competition - In-Hand Manipulation Track
 
 <div class="row mt-3">
