@@ -44,6 +44,9 @@
     - name: Yue Ma / 马跃
       image: assets/img/people/mayue.jpg
       alt: I am Yue. I am wearing a suit.
+    - name: Qingqi Zhang / 张清琦
+      image: assets/img/people/zhangqingqi.jpg
+      alt: I am Qingqi. I am wearing a dark blue shirt.
 - name: Master's Students
   full: true
   list:
@@ -57,9 +60,6 @@
     - name: Tingyu Cui / 崔庭瑀
       image: assets/img/people/cuitingyu.jpg
       alt: I am Tingyu. I am wearing a black down jacket.
-    - name: Qingqi Zhang / 张清琦
-      image: assets/img/people/zhangqingqi.jpg
-      alt: I am Qingqi. I am wearing a dark blue shirt.
 # - name: Undergraduate Students
 #   full: true
 #   list:
