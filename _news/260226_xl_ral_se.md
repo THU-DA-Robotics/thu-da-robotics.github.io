@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Congratulations to Xiang Li on being invited to serve as a **Senior Editor** for *IEEE Robotics and Automation Letters* (RA-L)! :tada: :robot:
+Congratulations to Prof. Xiang Li on being invited to serve as a **Senior Editor** for _IEEE Robotics and Automation Letters_ (RA-L)! :tada: :robot:
