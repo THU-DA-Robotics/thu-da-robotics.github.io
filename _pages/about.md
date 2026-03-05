@@ -6,7 +6,7 @@ subtitle: <a href='https://www.au.tsinghua.edu.cn'>Department of Automation</a>,
 
 profile:
   align: right
-  image: lab_photo.jpg
+  image: lab_photo.avif
   image_circular: false # crops the image to make it circular
   more_info:
 
