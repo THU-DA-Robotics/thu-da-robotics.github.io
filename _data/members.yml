@@ -3,62 +3,62 @@
   list:
     - name: Shu Miao / 苗述
       website: https://scholar.google.com/citations?user=UtAe0rMAAAAJ&hl=zh-CN
-      image: assets/img/people/miaoshu.jpg
+      image: assets/img/people/miaoshu.avif
       alt: I am Shu. I am wearing a blue shirt.
 - name: PhD Students
   full: true
   list:
     - name: Mingrui Yu / 于铭瑞
-      image: assets/img/people/yumingrui.jpg
+      image: assets/img/people/yumingrui.avif
       website: https://mingrui-yu.github.io
       alt: I am Mingrui. I am wearing a black t-shirt.
     - name: Xiangjie Yan / 严相杰
-      image: assets/img/people/yanxiangjie.jpg
+      image: assets/img/people/yanxiangjie.avif
       website: https://yanseim.github.io
       alt: I am Xiangjie. I am wearing a black t-shirt.
     - name: Yongyi Jia / 贾永奕
-      image: assets/img/people/jiayongyi.jpg
+      image: assets/img/people/jiayongyi.avif
       alt: I am Yongyi. I am wearing a white shirt.
     - name: Kangchen Lv / 吕康晨
-      image: assets/img/people/lvkangchen.jpg
+      image: assets/img/people/lvkangchen.avif
       alt: I am Kangchen. I am wearing a suit.
     - name: Yu Chen / 陈煜
-      image: assets/img/people/chenyu.jpg
+      image: assets/img/people/chenyu.avif
       alt: I am Yu. I am wearing a green shirt.
     - name: Hanzhong Zhong / 钟瀚中
-      image: assets/img/people/zhonghanzhong.jpg
+      image: assets/img/people/zhonghanzhong.avif
       alt: I am Hanzhong. I am wearing a blue jacket.
     - name: Yongpeng Jiang / 姜永鹏
-      image: assets/img/people/jiangyongpeng.jpg
+      image: assets/img/people/jiangyongpeng.avif
       website: https://director-of-g.github.io
       alt: I am Yongpeng. I am wearing a blue shirt.
     - name: Dongjie Zhu / 朱东杰
-      image: assets/img/people/zhudongjie.jpg
+      image: assets/img/people/zhudongjie.avif
       alt: I am Dongjie. I am wearing a suit.
     - name: Daoheng Li / 李道衡
-      image: assets/img/people/lidaoheng.jpg
+      image: assets/img/people/lidaoheng.avif
       alt: I am Daoheng. I am wearing a black jacket.
     - name: Shihefeng Wang / 王施赫丰
-      image: assets/img/people/wangshihefeng.jpg
+      image: assets/img/people/wangshihefeng.avif
       alt: I am Shihefeng. I am wearing a blue shirt.
     - name: Yue Ma / 马跃
-      image: assets/img/people/mayue.jpg
+      image: assets/img/people/mayue.avif
       alt: I am Yue. I am wearing a suit.
     - name: Qingqi Zhang / 张清琦
-      image: assets/img/people/zhangqingqi.jpg
+      image: assets/img/people/zhangqingqi.avif
       alt: I am Qingqi. I am wearing a dark blue shirt.
 - name: Master's Students
   full: true
   list:
     - name: Chen Chen / 陈辰
       website: https://calaw.cc/
-      image: assets/img/people/chenchen.jpg
+      image: assets/img/people/chenchen.avif
       alt: I am Chen. I am wearing a white shirt.
     - name: Qikai Zou / 邹祺凯
-      image: assets/img/people/zouqikai.jpg
+      image: assets/img/people/zouqikai.avif
       alt: I am Qikai. I am wearing a suit.
     - name: Tingyu Cui / 崔庭瑀
-      image: assets/img/people/cuitingyu.jpg
+      image: assets/img/people/cuitingyu.avif
       alt: I am Tingyu. I am wearing a black down jacket.
 # - name: Undergraduate Students
 #   full: true
