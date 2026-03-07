@@ -42,7 +42,7 @@ The ultrasound scanning robot commonly works in an environment where human-robot
 
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/project_img/ultradp.png" class="img-fluid rounded z-depth-1" zoomable=true %}
+        {% include figure.liquid loading="eager" path="assets/img/project_img/ultradp.avif" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
 </div>
 
