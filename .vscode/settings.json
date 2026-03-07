@@ -125,5 +125,6 @@
     "year-desc",
     "month"
   ],
-  "latex-workshop.bibtex-format.trailingComma": true
+  "latex-workshop.bibtex-format.trailingComma": true,
+  "latex-workshop.bibtex-format.align-equal.enabled": false
 }
