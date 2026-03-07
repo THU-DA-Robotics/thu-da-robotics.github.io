@@ -45,7 +45,7 @@ This article focuses on the global moving and shaping of DLOs in constrained env
 
 ## Dual-Arm Manipulation of Deformable Linear Objects with Whole-Body Obstacle Avoidance
 
-{% cite yu2023acoarse %}
+{% cite yu2023coarsetofine %}
 [[Website](https://mingrui-yu.github.io/DLO_planning/)]
 
 <div class="row mt-3">
