@@ -32,7 +32,7 @@ Most research on deformable linear object (DLO) manipulation assumes rigid grasp
 
 ## Generalizable Global Manipulation of Deformable Linear Objects in Constrained Environments
 
-{% cite yu2023generalizable %}
+{% cite yu2025generalizable %}
 [[Website](https://mingrui-yu.github.io/DLO_planning_2/)]
 
 <div class="row mt-3">

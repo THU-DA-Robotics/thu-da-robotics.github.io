@@ -114,17 +114,18 @@
     "month",
     "journal",
     "booktitle",
+    "publisher",
     "volume",
     "number",
     "pages",
     "doi"
   ],
   "latex-workshop.bibtex-fields.sort.enabled": true,
+  "latex-workshop.bibtex-format.align-equal.enabled": false,
   "latex-workshop.bibtex-format.sort.enabled": true,
   "latex-workshop.bibtex-format.sortby": [
     "year-desc",
     "month"
   ],
-  "latex-workshop.bibtex-format.trailingComma": true,
-  "latex-workshop.bibtex-format.align-equal.enabled": false
+  "latex-workshop.bibtex-format.trailingComma": true
 }
