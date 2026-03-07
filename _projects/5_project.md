@@ -42,7 +42,7 @@ The generalizability of robots across different wearers in multiple tasks is imp
 
 ## Interactive Control for Cable-Driven Upper-Limb Exoskeleton Robots with Series Elastic Actuators
 
-{% cite shu2023two %}
+{% cite shu2023twostage %}
 
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
@@ -54,7 +54,7 @@ We propose a new trajectory-tracking control scheme for cable-driven upper-limb 
 
 ## Safe and Individualized Motion Planning for Upper-limb Exoskeleton
 
-{% cite chen2023safe chen2025upper chen2026semantic %}
+{% cite chen2024safe chen2025upperlimb chen2026semantic %}
 
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
