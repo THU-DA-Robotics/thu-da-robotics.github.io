@@ -59,18 +59,6 @@
                 <source src="{{ preview_video_path | relative_url | escape }}" type="video/mp4">
               {% endif %}
             </video>
-            <script>
-              {
-                const video = document.currentScript.previousElementSibling;
-                video.addEventListener('medium-zoom:open', () => {
-                  // medium-zoom shallow-clones the video after this event.
-                  queueMicrotask(() => {
-                    const zoomedVideo = document.querySelector('video.medium-zoom-image--opened');
-                    if (zoomedVideo) zoomedVideo.src = video.currentSrc;
-                  });
-                });
-              }
-            </script>
           </figure>
         {% elsif entry.preview contains '://' %}
           <img class="preview z-depth-1 rounded" src="{{ entry.preview }}">

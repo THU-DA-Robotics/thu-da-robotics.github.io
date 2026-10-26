@@ -48,7 +48,7 @@ group :al_folio_plugins do
     # gem 'al_img_tools', '= 1.0.3'
     gem 'al_img_tools',
         git: 'https://github.com/CalaW/al-img-tools.git',
-        ref: '2133c8962a8b6b919317cfc2f16a05643dc305e7'
+        ref: '7a4199dc312a756ce400e034f23be8183471f32c'
     gem 'al_search', '= 1.0.3'
     gem 'al_charts', '= 1.0.1'
     gem 'al_math', '= 1.0.2'
